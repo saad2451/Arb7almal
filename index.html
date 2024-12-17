@@ -3,51 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiniApp - Daily Coins</title>
+    <title>Daily Coins MiniApp</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
         }
-        h1 {
-            color: #4CAF50;
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            font-size: 1.5em;
+        }
+        .container {
             margin-top: 20px;
-        }
-        p {
-            color: #555;
         }
         button {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 20px;
             border: none;
-            border-radius: 5px;
+            padding: 10px 20px;
             font-size: 16px;
-            cursor: pointer;
             margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
         }
         button:hover {
             background-color: #45a049;
         }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Daily Coins MiniApp!</h1>
-    <p>Collect your coins and enjoy daily rewards.</p>
-    
-    <!-- Buttons -->
-    <button onclick="alert('You earned 1 coin!')">Collect Coins</button>
-    <button onclick="alert('Combo Card: Double Rewards!')">Daily Combo Card</button>
-    <button onclick="window.open('https://t.me/your_community_link')">Join Community</button>
-
-    <!-- Telegram Widget -->
-    <h3>Login via Telegram</h3>
-    <script async src="https://telegram.org/js/telegram-widget.js?22"
+    <header>Daily Coins MiniApp</header>
+    <div class="container">
+        <p>Welcome to the Daily Coins MiniApp!</p>
+        <img src="https://via.placeholder.com/150" alt="Circular Image">
+        <br>
+        <button onclick="alert('You earned 1 coin!')">🎉 Collect Coins</button>
+        <button onclick="alert('Combo Card: Double Rewards!')">🃏 Daily Combo Card</button>
+        <button onclick="window.open('https://t.me/your_community_link')">🤝 Join Community</button>
+    </div>
+    <!-- Telegram Login Widget -->
+    <h3>Login with Telegram</h3>
+    <script async src="https://telegram.org/js/telegram-widget.js?22" 
             data-telegram-login="samplebot" 
             data-size="large" 
+            data-userpic="false"
             data-request-access="write">
     </script>
 </body>
